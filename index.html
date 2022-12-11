@@ -7,6 +7,7 @@
     <title>Todo List</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script defer scr="/assets/script.js"></script>
   </head>
 
   <body>
@@ -14,10 +15,11 @@
 
         <div class="all-tasks">
             <h2 class="task-list-title">My Lists</h2>
-            <ul class="task-list">
-                    <li class="active-list">Coding Homework</li>
-                    <li>Work</li>
-                    <li>Grocery Store</li>
+            <ul class="task-list" data-lists>
+                    <li class="list-name
+                    active-list">Coding Homework</li>
+                    <li class="list-name">Work</li>
+                    <li class="list-name">Grocery Store</li>
             </ul>
 
             <form action="">
@@ -27,7 +29,7 @@
                     placeholder="new list name"
                     aria-label="new list name"
                 />
-                <button class="btn list" aria-label="create new list">+</button>
+                <button class="btn create" aria-label="create new list">+</button>
             </form>
         </div>
 
@@ -82,11 +84,11 @@
                     <form action="">
                         <input 
                             type="text"
-                            class="new list"
+                            class="new task"
                             placeholder="new task name"
                             aria-label="new task name"
                         />
-                        <button class="btn task"
+                        <button class="btn create"
                         aria-label="create new task">+</button>
                     </form>
                 </div>
